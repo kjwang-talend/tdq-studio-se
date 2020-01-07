@@ -19,6 +19,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.ui.PlatformUI;
 import org.talend.dataprofiler.core.ui.wizard.MetadataWizardPage;
 import org.talend.dataprofiler.help.HelpPlugin;
+import org.talend.designer.core.utils.HelpUtil;
 import org.talend.resource.ResourceManager;
 
 /**
@@ -86,7 +87,7 @@ public class NewMatchRuleMetadataPage extends MetadataWizardPage {
      */
     @Override
     public void performHelp() {
-        PlatformUI.getWorkbench().getHelpSystem().displayHelp(helpContextId);
+        HelpUtil.displayHelp(helpContextId);
     }
 
     public void setHelpContextId(String newHelpContextId) {
